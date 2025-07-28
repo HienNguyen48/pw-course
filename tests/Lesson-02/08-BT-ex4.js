@@ -1,4 +1,5 @@
 const Chieucao = 170;
+const heighMod = 170 % 100;
 const CNLT = (Chieucao * 9)/10;
 const CNTĐ = Chieucao;
 const CNTT = (Chieucao * 8)/10
