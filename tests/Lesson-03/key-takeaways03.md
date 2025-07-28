@@ -1,0 +1,6 @@
+- Trước khi tạo 1 nhánh phải kiểm tra xem đang đứng ở nhánh nào
+- git branch <tên_branch> => tạo nhánh
+- git checkout <tên_branch(nhánh)> => chuyển sang nhánh
+- git checkout -b <tên_branch> => Vừa tạo nhánh & vừa chuyển nhánh
+- NOTE: Luôn tạo nhánh mới trước khi mình thực hiện 1 lệnh coppy từ internet
+- NOTE: 
