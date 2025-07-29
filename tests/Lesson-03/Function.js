@@ -25,16 +25,26 @@
 // printNumber(15);
 // console.log("Hello");
 
-//function có return value => nghĩa là hàm trả về giá trị 
-function getMax (a, b){
-    if (a > b){
-        return a;
-    }
-    return b;
-}
+// //function có return value => nghĩa là hàm trả về giá trị 
+// function getMax (a, b){
+//     if (a > b){
+//         return a;
+//     }
+//     return b;
+// }
 
-const max = getMax(10, 15);
-console.log(max);
+// const max = getMax(10, 15);
+// console.log(max);
 
 //Khi return xong nó sẽ out ra khỏi hàm function, nếu cho console.log ở bên dưới return b => thì nó sẽ k chạy được câu lệnh cosole.log đó vì đã return rồi
 //hàm có biến => trả ra 1 giá trị nên cần có 1 cái biến để hứng nó => vì vậy cần khai báo biến ngay bên dưới hàm 
+
+function ThongTinUser(ten, tuoi, diachi) {
+    console.log("hello :" + ten);
+    console.log(tuoi + ": tuổi");
+    console.log("Địa chỉ :"+ diachi);
+}
+
+ThongTinUser("Hien",18,"HN");
+
+ThongTinUser("MINH",20,"HN2");

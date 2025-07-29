@@ -1,0 +1,4 @@
+git commit --amend => Chỉnh sửa commit gần nhất 
+git commit --amend -m”<message>” => chỉnh sửa commit gần nhất, nhưng không mở trình soạn thảo.
+Đưa từ vùng staging về vùng working directory: git restore --staged <file>
+git reset HEAD~1 => Quay về working directory
