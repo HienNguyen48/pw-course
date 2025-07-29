@@ -3,4 +3,6 @@
 - git checkout <tên_branch(nhánh)> => chuyển sang nhánh
 - git checkout -b <tên_branch> => Vừa tạo nhánh & vừa chuyển nhánh
 - NOTE: Luôn tạo nhánh mới trước khi mình thực hiện 1 lệnh coppy từ internet
-- NOTE: 
+- Object là đối tượng, dùng để lưu trữ tập hợp các giá trị vào cùng 1 biến hoặc 1 hằng số 
+- Trong object có thể khai báo nhiều kiểu dữ liệu khác nhau
+- Mảng (Array) lưu danh sách các phần tử  
