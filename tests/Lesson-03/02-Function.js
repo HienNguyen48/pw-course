@@ -2,6 +2,7 @@
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 // console.log(arr.length);
 
+const { log } = require("console");
 const { parse } = require("path");
 
 // 2. Viết một hàm để chuyển đổi nhiệt độ từ độ C sang độ F và ngược lại. Hàm sẽnhận vào giá trị nhiệt độ và loại nhiệt độ ('C' hoặc 'F') và trả về nhiệt độ đãchuyển đổi. Biết công thức chuyển đổi:
@@ -224,19 +225,36 @@ const { parse } = require("path");
 // mảng các object.
 // Biết object có cấu trúc như sau: {“name”: “Alex”, score: 85}
 
-function tinhDiemTrungBinh(arr){
-    let tong = 0;
-    for (let i = 0; i < arr.length; i++) {
-        tong += arr[i].score;
+
+
+
+    // let tong = 0;
+    // let SL =[10,23,44,66,77,88,99,10];
+    // for(var i = 0; i<=SL.length -1 ; i++){        
+    //     tong = tong + SL[i];
+    // }
+    // let TBC = tong/SL.length
+    // console.log(TBC);
+
+
+
+
+
+
+function TBCV1(SL){
+    let tong = 0;    
+    for(var i = 0; i<=SL.length -1 ; i++){        
+        tong = tong + SL[i];
     }
-    return tong / arr.length;
+    let TBC = tong/SL.length
+    console.log(TBC);
 }
 
-let diemsuluu = [
-    {name: "Alex", score: 85},
-    {name: "Blex", score: 75},
-    {name: "Clex", score: 65},
-    {name: "Dlex", score: 55}
-];
+let SL1 = [8,77,90,1,2,34]
+TBCV1(SL1)
+let SL2 = [8,9,10]
+TBCV1(SL2)
 
-console.log("Điểm TB:", tinhDiemTrungBinh(diemsuluu));
+TBCV1([9,11,10])
+
+
