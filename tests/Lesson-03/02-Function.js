@@ -237,24 +237,110 @@ const { parse } = require("path");
     // console.log(TBC);
 
 
+// function TBCV1(SL){
+//     let tong = 0;    
+//     for(var i = 0; i<=SL.length -1 ; i++){        
+//         tong = tong + SL[i]; // gán lại bằng chính nó cộng với SL vòng lặp 
+//     }
+//     let TBC = tong/SL.length
+//     console.log(TBC);
+// }
+
+// let SL1 = [8,77,90,1,2,34]
+// TBCV1(SL1)
+// let SL2 = [8,9,10]
+// TBCV1(SL2)
+
+// TBCV1([9,11,10])
 
 
+// // 6. Viết một hàm tính điểm trung bình của các sinh viên dựa trên điểm số lưu trong một
+// // mảng các object.
+// // Biết object có cấu trúc như sau: {“name”: “Alex”, score: 85}
+// function tinhDiemSV(){
+//     let SV = [
+//         {names: "Hien1", score: 22},
+//         {names: "Hien2", score: 32},
+//         {names: "Hien3", score: 42},
+//         {names: "Hien4", score: 52},
+//         {names: "Hien5", score: 62},
+//         {names: "Hien6", score: 72},
+//         {names: "Hien6", score: 19256}
+//     ]
+
+//     let tong = 0;
+//     for(let i = 0; i <= SV.length - 1; i++){
+//         tong = tong + SV[i].score;
+//     }
+//     let TBC = tong/SV.length
+//     console.log(TBC);
+// }
+// tinhDiemSV();
+
+// 4. Viết một hàm để lọc ra các số nguyên tố từ một mảng số đã cho.
+// Biết:
+// ○ Số 0, số 1 không phải số nguyên tố.
+// ○ Các số nguyên tố là số chỉ chia hết cho 1 và chính nó
+
+//LOOP
+//  1. Tính tổng từ 1 đến 100.
+//     let tong = 0; // Tạo ra 1 cái hứng kết quả khi cộng tổng các giá trị với nhau 
+//     for( let i = 0; i <= 100 ; i++){
+//         tong = tong + i;
+//     }
+//     console.log(tong);
+// // 2. In bảng cửu chương từ 2 đến 9.
+      
+//       for(let i = 2; i <= 9 ; i++){
+//         console.log(i);
+//         for(let j = 1; j <= 10; j++){
+//             let tich = i * j;
+//             console.log(`${i} x ${j} = ${tich}`);
+//       }
+//       }
+      
+// // 3. Tạo một mảng chứa các số lẻ từ 1 đến 99.
+//        for(let i = 1; i <= 99; i++){
+//         if(i % 2 === 1){
+//             console.log(`${i} Là số lẻ`);
+//         }else{
+//             console.log(`${i} Là số chẵn`);
+//         }
+//        }
+// 4. In ra 10 email dựa trên tên người dùng và số thứ tự (ví dụ:
+// user-1@example.com, user2@example.com, ..., user10@example.com).
+
+           for(let i = 0;  i <= 10; i++){
+            console.log(`user-${i}@example.com`);
+           }
+           
 
 
-function TBCV1(SL){
-    let tong = 0;    
-    for(var i = 0; i<=SL.length -1 ; i++){        
-        tong = tong + SL[i];
+// 5. Tính tổng doanh thu của 12 tháng trong năm dựa trên mảng doanh thu đã cho và in ra tổng doanh thu. Biết cấu trúc object của mảng doanh thu như sau: {“month”: 2, “total”: 100}
+function DT(){
+    let object = [
+        {month: 1, total: 100},
+        {month: 2, total: 100},
+        {month: 3, total: 100},
+        {month: 4, total: 100},
+        {month: 5, total: 100},
+        {month: 6, total: 100},
+        {month: 7, total: 100},
+        {month: 8, total: 100},
+        {month: 9, total: 100},
+        {month: 10, total: 100},
+        {month: 11, total: 100},
+        {month: 12, total: 100}
+    ]
+    let tong = 0;
+    for(let i = 0; i < object.length; i++){
+        tong =  tong + object[i].total;
     }
-    let TBC = tong/SL.length
-    console.log(TBC);
+    console.log(`In ra tổng của từng tháng 1 đến tháng 12 ${tong}`);
 }
 
-let SL1 = [8,77,90,1,2,34]
-TBCV1(SL1)
-let SL2 = [8,9,10]
-TBCV1(SL2)
+DT();
 
-TBCV1([9,11,10])
+
 
 
