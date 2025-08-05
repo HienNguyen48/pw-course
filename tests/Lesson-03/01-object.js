@@ -5,8 +5,8 @@
 //     year: "2021",
 // }
 // console.log(car.year);
+//${car.year};
 
-const { getDefaultAutoSelectFamilyAttemptTimeout } = require("node:net")
 
 // //2.Tạo 1 object person
 // const person = {
@@ -78,9 +78,9 @@ const { getDefaultAutoSelectFamilyAttemptTimeout } = require("node:net")
 // tên các học sinh
 // Vd: const school = { classA: ["Giang"]...}
 
-const school = {
-    classA: ["An","Bình","Châu"],
-    classB: ["Đào","Hương","Giang"]
-}
+// const school = {
+//     classA: ["An","Bình","Châu"],
+//     classB: ["Đào","Hương","Giang"]
+// }
 
-console.log(school);
+// console.log(school);

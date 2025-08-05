@@ -1,9 +1,10 @@
 // 3.Khai báo một mảng các phần tử bất kì. Viết một hàm để tính tổng của các phần tử trong một mảng số.
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-// console.log(arr.length);
-
-const { log } = require("console");
-const { parse } = require("path");
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+let tong = 0;
+for(let i = 0; i<= arr.length -1; i ++){
+    tong += arr[i];
+}
+console.log(tong);
 
 // 2. Viết một hàm để chuyển đổi nhiệt độ từ độ C sang độ F và ngược lại. Hàm sẽnhận vào giá trị nhiệt độ và loại nhiệt độ ('C' hoặc 'F') và trả về nhiệt độ đãchuyển đổi. Biết công thức chuyển đổi:
 // ○ Từ độ C sang độ F: độ F = (độ C) * 9/5 + 32;
@@ -24,7 +25,7 @@ const { parse } = require("path");
 // FToC(20);
 
 
-// Bài 1
+// Bài 1: Trả về là phải dùng return 
 // function BMI(chieuCao, canNang){
 //  chieuCao = parseFloat(chieuCao);
 //  canNang = parseFloat(canNang);
@@ -38,6 +39,21 @@ const { parse } = require("path");
 //         console.log("Thừa cân");
 //     }else{
 //         console.log("Béo phì");
+//     }
+//     console.log(chieuCao);
+//     console.log(canNang);
+//     console.log(CT.toFixed(2));
+// }
+
+// //Cách 2:
+//     if(CT < 18.5){
+//         return 'Thiếu cân';
+//     }else if(CT <25){
+//         return 'Bình thường';
+//     }else if(CT <30){
+//         return 'Thừa cân';
+//     }else{
+//         return 'Béo phì';;
 //     }
 //     console.log(chieuCao);
 //     console.log(canNang);
@@ -59,6 +75,8 @@ const { parse } = require("path");
 //     console.log(nhietDo);
 // }
 // thoiTiet(19);
+
+// => Cách 2: có thể dùng return if...else
 
 // 11. Viết hàm nhập vào điểm số. In ra phân loại điểm số của học sinh: giỏi (>= 8), khá (>= 6.5 và < 8), trung bình (>= 5 và < 6.5), yếu (< 5).
 // function hocTap(diemSo){
@@ -310,36 +328,36 @@ const { parse } = require("path");
 // 4. In ra 10 email dựa trên tên người dùng và số thứ tự (ví dụ:
 // user-1@example.com, user2@example.com, ..., user10@example.com).
 
-           for(let i = 0;  i <= 10; i++){
-            console.log(`user-${i}@example.com`);
-           }
+        //    for(let i = 0;  i <= 10; i++){
+        //     console.log(`user-${i}@example.com`);
+        //    }
            
 
 
-// 5. Tính tổng doanh thu của 12 tháng trong năm dựa trên mảng doanh thu đã cho và in ra tổng doanh thu. Biết cấu trúc object của mảng doanh thu như sau: {“month”: 2, “total”: 100}
-function DT(){
-    let object = [
-        {month: 1, total: 100},
-        {month: 2, total: 100},
-        {month: 3, total: 100},
-        {month: 4, total: 100},
-        {month: 5, total: 100},
-        {month: 6, total: 100},
-        {month: 7, total: 100},
-        {month: 8, total: 100},
-        {month: 9, total: 100},
-        {month: 10, total: 100},
-        {month: 11, total: 100},
-        {month: 12, total: 100}
-    ]
-    let tong = 0;
-    for(let i = 0; i < object.length; i++){
-        tong =  tong + object[i].total;
-    }
-    console.log(`In ra tổng của từng tháng 1 đến tháng 12 ${tong}`);
-}
+// // 5. Tính tổng doanh thu của 12 tháng trong năm dựa trên mảng doanh thu đã cho và in ra tổng doanh thu. Biết cấu trúc object của mảng doanh thu như sau: {“month”: 2, “total”: 100}
+// function DT(){
+//     let object = [
+//         {month: 1, total: 100},
+//         {month: 2, total: 100},
+//         {month: 3, total: 100},
+//         {month: 4, total: 100},
+//         {month: 5, total: 100},
+//         {month: 6, total: 100},
+//         {month: 7, total: 100},
+//         {month: 8, total: 100},
+//         {month: 9, total: 100},
+//         {month: 10, total: 100},
+//         {month: 11, total: 100},
+//         {month: 12, total: 100}
+//     ]
+//     let tong = 0;
+//     for(let i = 0; i < object.length; i++){
+//         tong =  tong + object[i].total;
+//     }
+//     console.log(`In ra tổng của từng tháng 1 đến tháng 12 ${tong}`);
+// }
 
-DT();
+// DT();
 
 
 
